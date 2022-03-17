@@ -1,0 +1,19 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+/*
+ blue: #3A69D2
+ dark: #1F2937
+ light blue: #D1D4F4
+ text color: #F5F5F5
+ notes etc: #D5D4D8
+*/
