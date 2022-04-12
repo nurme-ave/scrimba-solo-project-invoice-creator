@@ -29,18 +29,18 @@ taskButtons.addEventListener('click', (e) => {
   let target = e.target;
   if (target.tagName === 'BUTTON') {
     invoicedTasks.add(services[target.value]);
-    renderTasks(invoicedTasks);
+    renderTaskList(invoicedTasks);
   }
 });
 
 
-function renderTasks(taskList) {
-  let invoicedTasks = '';
-  let invoicedPrice = '';
-  for (let invoicedItem of taskList) {
-    invoicedTasks += `<p class="task">${invoicedItem.task}<button class="task-remove">Remove</button></p>`;
-    invoicedPrice += `<p class="price"><span class="currency-sign">$</span>${invoicedItem.price}</p>`;
+function renderTaskList(taskList) {
+  let tasksHtml = '';
+  let priceHtml = '';
+  for (let item of taskList) {
+    tasksHtml += `<p class="task">${item.task}<button class="task-remove">Remove</button></p>`;
+    priceHtml += `<p class="price"><span class="currency-sign">$</span>${item.price}</p>`;
   }
-  document.getElementById('tasks').innerHTML = invoicedTasks;
-  document.getElementById('prices').innerHTML = invoicedPrice;
+  document.getElementById('tasks').innerHTML = tasksHtml;
+  document.getElementById('prices').innerHTML = priceHtml;
 }
