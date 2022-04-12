@@ -17,7 +17,6 @@ let services = [
   { id: 2, task: 'Pull Weeds', price: 30 },
 ];
 
-// console.log(services[0].task)
 
 const taskButtonsHtml = services.map((service) => {
   return `<button value="${service.id}">${service.task}: $${service.price}</button>`;
@@ -37,10 +36,13 @@ taskButtons.addEventListener('click', (e) => {
 function renderTaskList(taskList) {
   let tasksHtml = '';
   let priceHtml = '';
+  let totalAmount = 0;
   for (let item of taskList) {
     tasksHtml += `<p class="task">${item.task}<button class="task-remove">Remove</button></p>`;
     priceHtml += `<p class="price"><span class="currency-sign">$</span>${item.price}</p>`;
+    totalAmount += item.price;
   }
   document.getElementById('tasks').innerHTML = tasksHtml;
   document.getElementById('prices').innerHTML = priceHtml;
+  document.getElementById('total-amount').innerHTML = `<p class="price-total"><span class="currency-sign-total-amount">$ ${totalAmount}</span></p>`;
 }
