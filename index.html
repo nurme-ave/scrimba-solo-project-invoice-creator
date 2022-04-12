@@ -21,27 +21,21 @@
       </div>
 
       <div class="main-content">
-        <div class="button-group">
-          <button>
-            Wash Car: $10
-          </button>
-          <button>
-            Mow Lawn: $20
-          </button>
-          <button>
-            Pull Weeds: $30
-          </button>
-        </div>
+        <div id="service-buttons" class="button-group"></div>
 
         <div>
           <div class="tasks-and-total">
             <div class="tasks">
               <p class="sub-heading">Task</p>
+              <!-- BEGIN - JavaScript renders this part -->
               <div id="tasks"></div>
+              <!-- END - JavaScript renders this part -->
             </div>
             <div class="total">
               <p class="sub-heading">Total</p>
+              <!-- BEGIN - JavaScript renders this part -->
               <div id="prices"></div>
+              <!-- END - JavaScript renders this part -->
             </div>
           </div>
 
@@ -56,7 +50,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="send-button">
           <button>
             <i class="fa-solid fa-envelope icon-envelope"></i> Send invoice

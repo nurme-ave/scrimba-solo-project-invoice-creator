@@ -9,29 +9,25 @@
  */
 
 let services = [
-  {
-    task: 'Wash Car',
-    price: 10,
-  },
-  {
-    task: 'Mow Lawn',
-    price: 20,
-  },
-  {
-    task: 'Pull Weeds',
-    price: 30,
-  },
-];
+  {id: 1, task: 'Wash Car', price: 10},
+  {id: 2, task: 'Mow Lawn', price: 20},
+  {id: 3, task: 'Pull Weeds', price: 30}
+]
 
-const tasksHtml = services.map((service) => {
-  return `<p class="task">${service.task}<span class="task-remove">Remove</span></p>`;
-});
-
-document.getElementById('tasks').innerHTML = tasksHtml.join('');
+const buttonsHtml = services.map((service) => {
+  return `<button value="${service.id}">${service.task}: $${service.price}</button>`
+})
+document.getElementById('service-buttons').innerHTML = buttonsHtml.join('');
 
 
-const pricesHtml = services.map((service) => {
-  return `<p class="price"><span class="currency-sign">$</span>${service.price}</p>`;
-});
+// const tasksHtml = services.map((service) => {
+//   return `<p class="task">${service.task}<span class="task-remove">Remove</span></p>`;
+// });
+// document.getElementById('tasks').innerHTML = tasksHtml.join('');
 
-document.getElementById('prices').innerHTML = pricesHtml.join('');
+
+// const pricesHtml = services.map((service) => {
+//   return `<p class="price"><span class="currency-sign">$</span>${service.price}</p>`;
+// });
+// document.getElementById('prices').innerHTML = pricesHtml.join('');
+
