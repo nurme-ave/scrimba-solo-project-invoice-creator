@@ -75,6 +75,15 @@ button {
   background-color: #D1D4F4;
 }
 
+.send-button button {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  border: 0;
+  color: #fff;
+  background-color: #3A69D2;
+}
+
 .tasks-and-total,
 .notes-and-total-amount {
   display: flex;
@@ -145,15 +154,6 @@ button {
 
 .currency-sign {
   color: #918e9b;
-}
-
-.send-button button {
-  width: 100%;
-  height: 3rem;
-  font-size: 1rem;
-  border: 0;
-  color: #fff;
-  background-color: #3A69D2;
 }
 
 .icon-envelope {
