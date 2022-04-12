@@ -39,7 +39,7 @@ function renderTaskList(taskList) {
   let totalAmount = 0;
   for (let item of taskList) {
     tasksHtml += `<p class="task">${item.task}<button class="task-remove">Remove</button></p>`;
-    priceHtml += `<p class="price"><span class="currency-sign">$</span>${item.price}</p>`;
+    priceHtml += `<p class="price"><span class="currency-sign">$</span> ${item.price}</p>`;
     totalAmount += item.price;
   }
   document.getElementById('tasks').innerHTML = tasksHtml;
