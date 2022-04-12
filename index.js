@@ -8,29 +8,39 @@
  * - STRETCH: remove items after adding - the REMOVE button next to the item added
  */
 
+const taskButtons = document.getElementById('task-buttons');
+const invoicedTasks = new Set();
+
 let services = [
-  {id: 1, task: 'Wash Car', price: 10},
-  {id: 2, task: 'Mow Lawn', price: 20},
-  {id: 3, task: 'Pull Weeds', price: 30}
-]
+  { id: 0, task: 'Wash Car', price: 10 },
+  { id: 1, task: 'Mow Lawn', price: 20 },
+  { id: 2, task: 'Pull Weeds', price: 30 },
+];
 
-const buttonsHtml = services.map((service) => {
-  return `<button value="${service.id}">${service.task}: $${service.price}</button>`
-})
-document.getElementById('service-buttons').innerHTML = buttonsHtml.join('');
+// console.log(services[0].task)
 
-
-
-
-
-const tasksHtml = services.map((service) => {
-  return `<p class="task">${service.task}<button class="task-remove">Remove</button></p>`;
+const taskButtonsHtml = services.map((service) => {
+  return `<button value="${service.id}">${service.task}: $${service.price}</button>`;
 });
-document.getElementById('tasks').innerHTML = tasksHtml.join('');
+taskButtons.innerHTML = taskButtonsHtml.join('');
 
 
-const pricesHtml = services.map((service) => {
-  return `<p class="price"><span class="currency-sign">$</span>${service.price}</p>`;
+taskButtons.addEventListener('click', (e) => {
+  let target = e.target;
+  if (target.tagName === 'BUTTON') {
+    invoicedTasks.add(services[target.value]);
+    renderTasks(invoicedTasks);
+  }
 });
-document.getElementById('prices').innerHTML = pricesHtml.join('');
 
+
+function renderTasks(taskList) {
+  let invoicedTasks = '';
+  let invoicedPrice = '';
+  for (let invoicedItem of taskList) {
+    invoicedTasks += `<p class="task">${invoicedItem.task}<button class="task-remove">Remove</button></p>`;
+    invoicedPrice += `<p class="price"><span class="currency-sign">$</span>${invoicedItem.price}</p>`;
+  }
+  document.getElementById('tasks').innerHTML = invoicedTasks;
+  document.getElementById('prices').innerHTML = invoicedPrice;
+}
