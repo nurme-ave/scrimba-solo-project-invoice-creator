@@ -20,14 +20,17 @@ const buttonsHtml = services.map((service) => {
 document.getElementById('service-buttons').innerHTML = buttonsHtml.join('');
 
 
-// const tasksHtml = services.map((service) => {
-//   return `<p class="task">${service.task}<span class="task-remove">Remove</span></p>`;
-// });
-// document.getElementById('tasks').innerHTML = tasksHtml.join('');
 
 
-// const pricesHtml = services.map((service) => {
-//   return `<p class="price"><span class="currency-sign">$</span>${service.price}</p>`;
-// });
-// document.getElementById('prices').innerHTML = pricesHtml.join('');
+
+const tasksHtml = services.map((service) => {
+  return `<p class="task">${service.task}<button class="task-remove">Remove</button></p>`;
+});
+document.getElementById('tasks').innerHTML = tasksHtml.join('');
+
+
+const pricesHtml = services.map((service) => {
+  return `<p class="price"><span class="currency-sign">$</span>${service.price}</p>`;
+});
+document.getElementById('prices').innerHTML = pricesHtml.join('');
 

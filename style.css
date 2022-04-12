@@ -58,7 +58,7 @@ body {
 }
 
 button {
-  border-radius: .5em;
+  cursor: pointer;
 }
 
 .button-group {
@@ -75,6 +75,7 @@ button {
   font-weight: 500;
   font-family: 'Inter', sans-serif;
   border: .2em solid #fff;
+  border-radius: .5em;
   color: #4a4e74;
   background-color: #D1D4F4;
 }
@@ -84,6 +85,7 @@ button {
   height: 3rem;
   font-size: 1rem;
   border: 0;
+  border-radius: .5em;
   color: #fff;
   background-color: #3A69D2;
 }
@@ -143,7 +145,9 @@ button {
 .task-remove {
   margin-left: .75em;
   font-size: .5rem;
+  border: 0;
   color: #D5D4D8;
+  background: none;
 }
 
 .price-total {
