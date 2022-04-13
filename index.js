@@ -4,10 +4,7 @@ const invoicedTasks = new Set();
 let services = [
   { id: 0, task: 'Wash Car', price: 10 },
   { id: 1, task: 'Mow Lawn', price: 20 },
-  { id: 2, task: 'Pull Weeds', price: 30 },
-  { id: 3, task: 'Cook Dinner', price: 40 },
-  { id: 4, task: 'Walk The Dog', price: 50 },
-  { id: 5, task: 'Grocery Shopping', price: 60 },
+  { id: 2, task: 'Pull Weeds', price: 30 }
 ];
 
 const taskButtonsHtml = services.map((service) => {
