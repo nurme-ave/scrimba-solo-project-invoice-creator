@@ -37,7 +37,6 @@ removeButton.addEventListener('click', (e) => {
   const target = e.target;
   if (target.tagName === 'BUTTON') {
     removeItem(target.id)
-    console.log(target.id)
     renderTaskList(invoicedTasks)
   }
 })
@@ -59,4 +58,5 @@ function renderTaskList(taskList) {
 
 
 function removeItem(item){
+  invoicedTasks.delete(services[item])
 }
