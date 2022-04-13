@@ -7,7 +7,7 @@ let services = [
   { id: 2, task: 'Pull Weeds', price: 30 },
   { id: 3, task: 'Cook Dinner', price: 40 },
   { id: 4, task: 'Walk The Dog', price: 50 },
-  { id: 5, task: 'Grocery Shopping', price: 60 }
+  { id: 5, task: 'Grocery Shopping', price: 60 },
 ];
 
 const taskButtonsHtml = services.map((service) => {
@@ -34,9 +34,7 @@ function renderTaskList(taskList) {
   }
   document.getElementById('tasks').innerHTML = tasksHtml;
   document.getElementById('prices').innerHTML = priceHtml;
-  document.getElementById(
-    'total-amount'
-  ).innerHTML = `<p class="price-total"><span class="currency-sign-total-amount">$ ${totalAmount}</span></p>`;
+  document.getElementById('total-amount').innerHTML = `<p class="price-total">$ ${totalAmount}</p>`;
 }
 
 document.getElementById('remove-button').addEventListener('click', (e) => {
