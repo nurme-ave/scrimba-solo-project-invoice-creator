@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 html,
@@ -31,7 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20vh;
+  height: 150px;
   font-size: 1.5rem;
   font-weight: 800;
   color: #fff;
@@ -52,7 +51,8 @@ body {
   flex-direction: column;
   gap: 2em;
   width: 100%;
-  height: 80vh;
+  height: auto;
+  /* overflow-x: hidden; */
   padding: 3em 2em;
   color: #D5D4D8;
   background-color: #1F2937;
@@ -64,6 +64,7 @@ button {
 
 .button-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: .75em;
@@ -99,7 +100,7 @@ button {
 
 .tasks-and-total {
   border-bottom: 1px solid gray;
-  height: 150px;
+  min-height: 150px;
 }
 
 .notes-and-total-amount {
@@ -146,7 +147,7 @@ button {
 
 .task-remove {
   margin-left: .75em;
-  padding: .75em 1em .75em 0;
+  padding: .75em 1em 0 0;
   font-size: .5rem;
   border: 0;
   color: #D5D4D8;
@@ -171,7 +172,9 @@ button {
 /* MEDIA QUERIES */
 @media screen and (min-width: 550px) {
   .main-container {
+    align-items: flex-start;
     height: 100vh;
+    padding-top: 5em;
   }
 
   .card-container {
