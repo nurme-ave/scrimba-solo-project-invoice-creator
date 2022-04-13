@@ -52,7 +52,6 @@ body {
   gap: 2em;
   width: 100%;
   height: auto;
-  /* overflow-x: hidden; */
   padding: 3em 2em;
   color: #D5D4D8;
   background-color: #1F2937;
@@ -145,7 +144,7 @@ button {
   text-transform: capitalize;
 }
 
-.task-remove {
+.remove-task-button {
   margin-left: .75em;
   padding: .75em 1em 0 0;
   font-size: .5rem;
@@ -180,11 +179,15 @@ button {
   .card-container {
     width: 575px;
     height: 700px;
-    border-radius: .5em;
   }
-
+  
+  .heading {
+    border-radius: .5em .5em 0 0;
+  }
+  
   .main-content {
     padding: 3em;
+    border-radius: 0 0 .5em .5em;
   }
 
   .notes {
