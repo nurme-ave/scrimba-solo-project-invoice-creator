@@ -9,7 +9,6 @@
 html,
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #ccc;
 }
 
 .main-container {
@@ -18,6 +17,7 @@ body {
   align-items: center;
   width: 100vw;
   height: auto;
+  background-color: #343a40;
 }
 
 .card-container {
@@ -31,7 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 150px;
+  height: 20vh;
   font-size: 1.5rem;
   font-weight: 800;
   color: #fff;
@@ -52,6 +52,7 @@ body {
   flex-direction: column;
   gap: 2em;
   width: 100%;
+  height: 80vh;
   padding: 3em 2em;
   color: #D5D4D8;
   background-color: #1F2937;
@@ -98,6 +99,7 @@ button {
 
 .tasks-and-total {
   border-bottom: 1px solid gray;
+  height: 150px;
 }
 
 .notes-and-total-amount {
@@ -144,6 +146,7 @@ button {
 
 .task-remove {
   margin-left: .75em;
+  padding: .75em 1em .75em 0;
   font-size: .5rem;
   border: 0;
   color: #D5D4D8;
@@ -172,7 +175,8 @@ button {
   }
 
   .card-container {
-    width: 550px;
+    width: 575px;
+    height: 700px;
     border-radius: .5em;
   }
 
