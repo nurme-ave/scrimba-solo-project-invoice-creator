@@ -180,10 +180,12 @@ button {
   }
   
   .heading {
+    height: 150px;
     border-radius: .5em .5em 0 0;
   }
   
   .main-content {
+    height: 500px;
     padding: 3em;
     border-radius: 0 0 .5em .5em;
   }
