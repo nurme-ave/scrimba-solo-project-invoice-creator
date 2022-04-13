@@ -63,7 +63,6 @@ button {
 
 .button-group {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: .75em;
