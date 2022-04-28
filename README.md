@@ -1,4 +1,4 @@
-# Random Password Generator - Solo Project 2 at Scrimba
+# Invoice Creator - Solo Project 3 at Scrimba
 
 This is a personal project built by [Ave Nurme](https://www.avenurme.dev).
 
@@ -15,20 +15,16 @@ This is a personal project built by [Ave Nurme](https://www.avenurme.dev).
 
 ### Project Description
 
-This was my second solo project at the Scrimba's Frontend Developer Career Path. Solo project means that you are only provided with the Figma design file and a set of requirements you need to implement in the project. There is no hand-holding or a walk-through solution with the instructor. How you solve the challenge and implement the logic is completely up to you.
+This was my third solo project at the Scrimba's Frontend Developer Career Path. Solo project means that you are only provided with the Figma design file and a set of requirements you need to implement in the project. There is no hand-holding or a walk-through solution with the instructor. How you solve the challenge and implement the logic is completely up to you.
 
-A stretch goal in this project was to add 1-click-copy which was quite interesting to implement.
-
-More features I added myself:
-- user input and the instructions text next to it
-- when the user enters an invalid number the instructions text will turn red
-- the 'Clear password fields' button
-- a hovering 'Copied!' text when the password has been copied on the clipboard
+A stretch goal in this project was to remove items after adding them to the invoice.
 
 New things learned:
-- generate an array of letters, numbers and symbols from the ASCII code by using String.fromCharCode()
-- write specified text string to the system clipboard (1-click-copy) with clipboard.writeText()
-- automatically add and remove classes using setTimeout()
+- got a better feel of utilizing Set() and its methods (add, delete, clear)
+- also used the findIndex()-method here
+- worked with objects and retrieved data from them
+
+Overall, as this was my 3rd solo project at Scrimba, I felt quite comfortable with writing JavaScript here and didn't need to look it up that much anymore while writing my code.
 
 The page is fully responsive.
 
@@ -36,11 +32,11 @@ The code has been reviewed and approved by a Scrimba instructor.
 
 ### Screenshot
 
-![Screenshot of my solution](/random-password-generator.png)
+![Screenshot of my solution](/invoice-creator_screenshot.png)
 
 ### Links
 
-- Live Site URL: [GitHub Pages](https://nurme-ave.github.io/scrimba-solo-project-random-password-generator/)
+- Live Site URL: [GitHub Pages](https://nurme-ave.github.io/scrimba-solo-project-invoice-creator/)
 
 ### Built with
 
