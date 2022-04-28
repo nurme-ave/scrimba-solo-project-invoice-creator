@@ -22,7 +22,7 @@ A stretch goal in this project was to remove items after adding them to the invo
 New things learned:
 - got a better feel of utilizing Set() and its methods (add, delete, clear)
 - also used the findIndex()-method here
-- worked with objects and retrieved data from them
+- worked with objects and accessed data from them
 
 Overall, as this was my 3rd solo project at Scrimba, I felt quite comfortable with writing JavaScript here and didn't need to look it up that much anymore while writing my code.
 
